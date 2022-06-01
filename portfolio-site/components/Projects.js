@@ -8,4 +8,4 @@ function Projects () {
     )
 }
 
-export default Projets;
+export default Projects;
