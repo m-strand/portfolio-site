@@ -1,13 +1,261 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;400&family=Josefin+Sans:wght@500&display=swap');
+
+*, html {
+    margin:0;
+    padding:0;  
+    font-family: 'Inter', sans-serif;
+}
+.navBar {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  border-bottom: 1px solid #dddddd;
+  z-index: 1;
+  background-color: white;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.logo {
+   position: relative;
+   display: inline-block;
+   float: left;
+   margin: 10px 0 10px 50px;
+   padding: 5px;
+   font-family: 'Josefin Sans';
+  
+}
+.nav {
+  text-align: right; 
+  float: right;
+  margin: 10px 0 10px 0;
+}
+
+.navLink {
+  float: left;
+  margin: 10px;
+  font-weight: 100;
+  padding: 5px;
+  
+}
+
+.lastname {
+  float: left;
+  margin-left: 20px;
+  font-size: 20px;
+}
+
+.logoIcon {
+  float: right;
+  margin-left: 20px;
+  
+}
+
+ @keyframes bounce {
+        0%   { transform: scale(1,1) translateY(0); }
+        10%  { transform: scale(1.1,0.9) translateY(0); }
+        30%  { transform: scale(.9,1.1)   translateY(-10px);}
+        50%  { transform: scale(1.05,.95) translateY(0); }
+        58%  { transform: scale(1,1) translateY(-4px); }
+        65%  { transform: scale(1,1) translateY(0);}
+        100% { transform: scale(1,1) translateY(0);}
+    }
+
+.c {
+  animation: bounce 3s ease infinite;
+}
+
+.o {
+  animation: bounce 3s ease infinite .1s;
+}
+
+.n {
+  animation: bounce 3s ease infinite .2s;
+}
+
+.t {
+  animation: bounce 3s ease infinite .3s;
+}
+
+.a {
+  animation: bounce 3s ease infinite .4s;
+}
+
+.c {
+  animation: bounce 3s ease infinite .5s;
+}
+
+.t {
+  animation: bounce 3s ease infinite .6s;
+}
+
+.bounce-text {
+  position: relative;
+  display: flex;
+}
+
+.selected {
+  border-bottom: 1px solid #dddddd;
+}
+
+.intro {
+  font-family: 'Josefin Sans'; 
+  text-align: left;
+  font-size: 60px;
+  font-weight: 350;
+  line-height: 1.5;
+}
+
+.main {
+    margin: 150px 100px 100px 100px;
+    background-color: #D9FF19;
+    border: 10px solid black;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    width: 50%;
+    padding: 50px;
+  }
+
+.type-key {
+  animation: blinker 1.5s linear infinite;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+
+.circled {
+  border: 2px solid black;
+  border-radius: 45px;
+  padding: 4px;
+  font-weight: 200;
+}
+
+.section {
+  width:100%; 
+  text-align: center; 
+  border-bottom: 1px solid #000; 
+  line-height:0.1em; 
+  margin:80px 5px 20px 0;
+  clear: both;
+}
+
+.section-text {
+  background:#fff; 
+  padding:0 10px;
+}
+
+.about {
+  text-align: center;
+}
+
+.personal {
+  font-size: 20px;
+  font-weight: 400;
+  text-align: left;
+  width: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  
+}
+
+.imgContainer {
+ display: flex;
+  margin: 50px 100px;
+}
+.currentCard {
+  flex: 33.33%;
+  padding: 10px;
+  
+}
+
+.current {
+  margin-left: 50px;
+  margin-top: 50px;
+  text-align: left;
+}
+
+.currentlyText {
+  font-family: 'Josefin Sans';
+  padding: 10px;
+}
+
+.currentlyImg {
+  /*box-shadow: 40px 5px rgba(0, 21, 64, 0.14);*/
+  width: 50%;
+  
+
+}
+
+.skillContainer {
+  display: flex;
+  margin: 50px;
+  font-family: 'Josefin Sans';
+}
+
+.skillCard {
+  flex: 25%;
+  padding: 5px;
+  
+}
+
+.greenBtn {
+  font-size: 25px;
+  background-color: #D9FF19;
+  border: none;
+  border-radius: 40px;
+  padding: 15px;
+  font-family: 'Josefin Sans';
+
+}
+
+
+.projectCard {
+  border: 1px solid #dddddd;
+  border-radius: 30px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  width: 50%;
+  display: block;
+  text-align: center;
+  padding-bottom: 100px;
+}
+
+.projectLinks {
+  text-decoration: none;
+  color: black;
+  font-family: 'Josefin Sans';
+  margin: 10px;
+}
+
+.langs {
+  float: left;
+  margin: 10px;
+  background-color: #D9FF19;
+  border-radius: 20px;
+  padding: 5px;
+  font-family: 'Josefin Sans';
+  font-size: 18px;
+}
+
+.contact {
+  text-align: center;
+}
+
+.footerText {
+  margin: 30px;
+}
+
+.footerIcon {
+  width: 50px;
+  height: 50px;
+  margin: 10px;
+  padding: 5px;
 }
