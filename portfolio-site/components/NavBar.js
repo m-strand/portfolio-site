@@ -1,4 +1,5 @@
 import React from React.js;
+import { NavLink } from "react-router-dom";
 
 function NavBar () {
     return (
@@ -27,11 +28,11 @@ function NavBar () {
             </div>
   
             <div className="nav">
-                <p className="navLink selected">ABOUT</p>
-                <p className="navLink">PROJECTS</p>
-                <p className="navLink">SKILLS</p>
-                <p className="navLink">RESUME</p>
-                <div className="navLink bounce-text">
+                <NavLink className="navLink selected">ABOUT</NavLink>
+                <NavLink className="navLink">PROJECTS</NavLink>
+                <NavLink className="navLink">RESUME</NavLink>
+                <NavLink className="navLink">SKILLS</NavLink>
+                <NavLink className="navLink bounce-text"to={/*pathway here!!*/} key={/*ID FIELD HERE*/}>
                     <div className="c">C</div>
                     <div className="o">O</div>
                     <div className="n">N</div>
@@ -39,7 +40,7 @@ function NavBar () {
                     <div className="a">A</div>
                     <div className="c">C</div>
                     <div className="t">T</div>
-                </div>
+                </NavLink>
             </div>
         </div>
     )

@@ -1,10 +1,10 @@
 import React from React.js;
 
-function SkillsCard () {
+function SkillsCard ({skillImg, skillName}) {
     return (
         <div className="skillCard">
-            <img src="https://cdn-icons-png.flaticon.com/512/2305/2305978.png" height="100px" weight="100px"/>
-            <p>HTML</p>
+            <img src={skillImg} height="100px" weight="100px"/>
+            <p>{skillName}</p>
         </div>
     );
 }
